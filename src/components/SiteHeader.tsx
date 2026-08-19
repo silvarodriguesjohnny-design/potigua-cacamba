@@ -12,11 +12,13 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 w-full border-b border-border bg-ink text-ink-foreground">
       <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-4 py-3 lg:px-8">
         <Link to="/" className="flex min-w-0 items-center gap-3" onClick={() => setOpen(false)}>
-          <img 
-            src={ASSETS.LOGO} 
-            alt="Potigua Caçamba" 
-            className="h-10 w-auto object-contain sm:h-12"
-          />
+          {ASSETS.LOGO && (
+            <img
+              src={ASSETS.LOGO}
+              alt="Potigua Caçamba"
+              className="h-10 w-auto object-contain sm:h-12"
+            />
+          )}
           <span className="min-w-0">
             <span className="block truncate font-display text-lg leading-none sm:text-xl">
               Potigua <span className="text-primary">Caçamba</span>
