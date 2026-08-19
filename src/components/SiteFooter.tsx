@@ -10,7 +10,7 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
         <div>
           <div className="mb-4 flex items-center gap-3">
-            <img
+            {ASSETS.LOGO && <img
               src={ASSETS.LOGO}
               alt="Potigua Caçamba Logo"
               className="h-16 w-auto object-contain"
