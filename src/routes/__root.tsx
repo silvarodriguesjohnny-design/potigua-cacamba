@@ -37,7 +37,6 @@ function NotFoundComponent() {
   );
 }
 
-
 function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
   const router = useRouter();
@@ -155,7 +154,6 @@ function RootComponent() {
       <div className="flex min-h-screen flex-col overflow-x-hidden">
         <SiteHeader />
         <main className="flex-1">
-          {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
           <Outlet />
         </main>
         <SiteFooter />
@@ -164,4 +162,3 @@ function RootComponent() {
     </QueryClientProvider>
   );
 }
-
