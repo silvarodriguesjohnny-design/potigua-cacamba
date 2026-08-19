@@ -92,13 +92,6 @@ const STEPS = [
   },
 ];
 
-const STATS = [
-  { value: "+5.000", label: "Clientes atendidos", icon: Star },
-  { value: "Mesmo dia", label: "Prazo de entrega", icon: Zap },
-  { value: "+10", label: "Caçambas disponíveis", icon: Truck },
-  { value: "10 anos", label: "De experiência", icon: Shield },
-];
-
 const BENEFITS = [
   "Atendimento pelo WhatsApp 7 dias por semana",
   "Entrega no mesmo dia — sem burocracia",
@@ -170,23 +163,6 @@ function Index() {
               </div>
             </div>
           </Reveal>
-        </div>
-      </section>
-
-      {/* STATS / PROVA SOCIAL */}
-      <section className="border-y-4 border-primary bg-primary/10">
-        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-px px-4 lg:grid-cols-4 lg:px-8">
-          {STATS.map((s) => (
-            <div key={s.label} className="flex flex-col items-center gap-2 py-8 text-center">
-              <s.icon className="h-7 w-7 text-primary" />
-              <span className="font-display text-3xl font-bold text-foreground lg:text-4xl">
-                {s.value}
-              </span>
-              <span className="text-xs uppercase tracking-widest text-muted-foreground">
-                {s.label}
-              </span>
-            </div>
-          ))}
         </div>
       </section>
 
@@ -380,7 +356,7 @@ function Index() {
       </section>
 
       {/* CTA FINAL */}
-      <section className="border-y4 border-primary bg-secondary py-20">
+      <section className="border-y-4 border-primary bg-secondary py-20">
         <div className="mx-auto max-w-3xl px-4 text-center lg:px-8">
           <Reveal>
             <span className="inline-block rounded-full bg-primary/10 px-4 py-1 text-xs font-bold uppercase tracking-widest text-primary">
