@@ -1,47 +1,52 @@
-// Imagens locais (public/) e URLs públicas para a galeria
-const UNSPLASH = (id: string) =>
-  `https://images.unsplash.com/photo-${id}?w=800&auto=format&fit=crop&q=80`;
-
+// Imagens locais (public/) para a galeria
 export const ASSETS = {
-  // Logo: sem imagem — header já exibe o texto estilizado
-  LOGO: "",
+    // Logo: sem imagem — header já exibe o texto estilizado
+    LOGO: "",
 
-  // Hero: imagem do caminhão/caçamba (public/caminhao.jpg)
-  HERO: "/caminhao.jpg",
+    // Hero: imagem do caminhão/caçamba (public/caminhao.jpg)
+    HERO: "/caminhao.jpg",
 
-  // Galeria: fotos de obras, entulho e equipamentos via Unsplash
-  GALLERY: [
-    {
-      url: "/caminhao.jpg",
-      alt: "Caminhão e caçamba da Potigua Caçamba na Grande São Paulo.",
-    },
-    {
-      url: UNSPLASH("1558618666-fcd25c85cd64"),
-      alt: "Entulho e resíduos de construção prontos para descarte.",
-    },
-    {
-      url: UNSPLASH("1504307651254-35680f356dfd"),
-      alt: "Obra residencial com caçamba para retirada de entulho.",
-    },
-    {
-      url: UNSPLASH("1503387762-592deb58ef4e"),
-      alt: "Canteiro de obra com descarte correto de resíduos.",
-    },
-    {
-      url: UNSPLASH("1600566752355-35792bedcfea"),
-      alt: "Reforma residencial com serviço de caçamba Potigua.",
-    },
-    {
-      url: UNSPLASH("1590736704728-f4730bb30770"),
-      alt: "Interior de imóvel em reforma com entulho segregado.",
-    },
-    {
-      url: UNSPLASH("1483736762161-1e9571e0dabb"),
-      alt: "Demolição e retirada de resíduos com caçamba.",
-    },
-    {
-      url: UNSPLASH("1560179406-1c14bd93b4db"),
-      alt: "Equipamento pesado em operação de limpeza de obra.",
-    },
-  ],
+    // Galeria: fotos locais em public/
+    GALLERY: [
+      {
+              url: "/caminhao.jpg",
+              alt: "Caminhão e caçamba da Potigua Caçamba na Grande São Paulo.",
+      },
+      {
+              url: "/caminhao.jpeg",
+              alt: "Caçamba Potigua em operação na Grande São Paulo.",
+      },
+      {
+              url: "/2.jpeg",
+              alt: "Serviço de caçamba Potigua.",
+      },
+      {
+              url: "/3.jpeg",
+              alt: "Locação de caçamba na Grande São Paulo.",
+      },
+      {
+              url: "/WhatsApp%20Image%202026-08-14%20at%2013.37.38.jpeg",
+              alt: "Caçamba Potigua em obra.",
+      },
+      {
+              url: "/WhatsApp%20Image%202026-08-14%20at%2013.37.39%20-%20Copia.jpeg",
+              alt: "Retirada de entulho com caçamba Potigua.",
+      },
+      {
+              url: "/WhatsApp%20Image%202026-08-14%20at%2013.37.39.jpeg",
+              alt: "Serviço de caçamba em reforma.",
+      },
+      {
+              url: "/WhatsApp%20Image%202026-08-14.jpeg",
+              alt: "Caçamba para obras e reformas.",
+      },
+      {
+              url: "/WhatsApp%20Image%202026-1.jpeg",
+              alt: "Locação de caçamba no mesmo dia.",
+      },
+      {
+              url: "/WhatsApp%20Image%202026.jpeg",
+              alt: "Atendimento rápido com caçamba Potigua.",
+      },
+        ],
 };
