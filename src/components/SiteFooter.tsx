@@ -14,7 +14,7 @@ export function SiteFooter() {
               src={ASSETS.LOGO}
               alt="Potigua Caçamba Logo"
               className="h-16 w-auto object-contain"
-            />
+            />}
             <h3 className="text-xl">
               Potigua <span className="text-primary">Caçamba</span>
             </h3>
